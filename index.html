@@ -36,6 +36,14 @@
 				    </code>
 				  </pre>
 				
+				 <pre><code><? $str = <<<'EOD'
+					  <!-- your code here -->
+					  EOD;
+					  $str = htmlspecialchars($str, ENT_HTML5, ENT_NOQUOTES);
+					  $str = str_replace("&amp;hellip;", "&hellip;", $str);
+					  echo($str);?>
+					</code></pre>
+
 				
 			</li>
 			<li>then scroll down and click the green button <b>commit changes </b> </li>
